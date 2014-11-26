@@ -21,7 +21,9 @@ define([
                 collection: todoCollection
             });
 
-            app.mainRegion.show(todoView);
+            this.show = function(region){
+                region.show(todoView);
+            }
         }
     });
 

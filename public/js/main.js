@@ -26,10 +26,11 @@ require([
 
     app.addRegions({
         mainRegion:"#main-region"
-
     });
 
     var TodoModule = app.module("TodoModule", TodoModule);
 
     app.start();
+
+    TodoModule.show(app.mainRegion);
 });
