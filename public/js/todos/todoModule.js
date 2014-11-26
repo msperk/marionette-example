@@ -1,9 +1,8 @@
 define([
-    'marionette',
     "todos/model/todoCollection",
     "todos/view/todoView",
     "todos/controller/todoController"
-], function(Marionette, TodoCollection, TodoView, TodoController) {
+], function(TodoCollection, TodoView, TodoController) {
     var TodoModule = Marionette.Module.extend({
         initialize: function(moduleName, app, options){
             var radio = Backbone.Wreqr.radio.channel(moduleName);

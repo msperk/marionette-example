@@ -1,7 +1,5 @@
-define([
-        'backbone'
-    ],
-    function(Backbone){
+define([],
+    function(){
 
         var Todo = Backbone.Model.extend({});
 

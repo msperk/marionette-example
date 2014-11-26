@@ -1,14 +1,13 @@
 define([
-        'backbone',
-        'marionette',
-        'todos/view/todoItemView'
+        'todos/view/todoItemView',
+        'text!todos/template/todoCompositeTemplate.html'
     ],
-    function(Backbone, Marionette, TodoItemView) {
+    function(TodoItemView, TodoCompositeTemplate) {
 
         var TodoView = Marionette.CompositeView.extend({
             tagName: "div",
             id: "todos",
-            template:"#todo-items",
+            template: _.template(TodoCompositeTemplate),
             childView: TodoItemView,
             childViewContainer: "#content",
             initialize: function(options) {

@@ -1,8 +1,5 @@
-define([
-        'backbone',
-        'marionette'
-    ],
-    function(Backbone, Marionette){
+define([],
+    function(){
         var TodoItemView = Marionette.Controller.extend({
             initialize: function(options){
                 this.collection = options.collection;

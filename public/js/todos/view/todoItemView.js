@@ -1,10 +1,9 @@
 define([
-        'backbone',
-        'marionette'
+        'text!todos/template/todoItemTemplate.html'
     ],
-    function(Backbone, Marionette){
+    function(TodoItemTemplate){
         var TodoItemView = Marionette.ItemView.extend({
-            template: "#todo-item",
+            template: _.template(TodoItemTemplate),
             tagName: 'div',
             initialize: function(options) {
                 this.module = options.module;
