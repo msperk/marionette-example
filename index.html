@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/template" id="todo-items">
+        <div>
+            <h1>TODOS APP!</h1>
+            <div id="content"></div>
+        </div>
+        <br>
+        New Todo:
+        <input id="nameInput"></input>
+        <button id="addTodo">Add Todo</button>
+    </script>
+
+    <script type="text/template" id="todo-item">
+        <div><%= name %></div>
+        <button class="removeButton">Remove</button>
+        <br>
+    </script>
+    <script data-main="public/js/main.js" src="bower_components/requirejs/require.js"></script>
+    <div id="main-region"></div>
+</body>
+</html>
+
