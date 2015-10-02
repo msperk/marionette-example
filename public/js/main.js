@@ -1,6 +1,8 @@
 require.config({
     shim: {
-
+        "backbone": ["jquery", "underscore"],
+        "marionette": ["jquery", "backbone", "underscore"],
+        "todos/todoModule": ["marionette", "backbone"]
     },
     paths: {
         backbone: "../../bower_components/backbone/backbone",
