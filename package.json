@@ -6,6 +6,6 @@
     "express": "3.x"
   },
   "devDependencies": {
+    "grunt-contrib-requirejs": "^0.4.4"
   }
 }
-
